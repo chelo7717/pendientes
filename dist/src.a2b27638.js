@@ -118,13 +118,9 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"src/App.js":[function(require,module,exports) {
-var tarea = document.querySelector("#tarea-input");
 var form = document.querySelector("tareas-form");
-var edad = document.querySelector("#edad-input");
-;
-var genero = document.querySelector("genero-select");
-var p = document.querySelector("#respuesta");
-var idioma = document.querySelector("#idioma-select");
+var tarea = document.querySelector("#tarea-input");
+var genero = document.querySelector("categoria-select");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   alert(tarea.value);
@@ -161,7 +157,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51668" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51182" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

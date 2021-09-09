@@ -1,9 +1,7 @@
-const tarea= document.querySelector("#tarea-input");
 const form = document.querySelector("tareas-form");
-const edad= document.querySelector("#edad-input");;
-const genero = document.querySelector("genero-select");
-const p = document.querySelector("#respuesta");
-const idioma= document.querySelector("#idioma-select");
+const tarea= document.querySelector("#tarea-input");
+const genero = document.querySelector("categoria-select");
+
 
 
 form.addEventListener("submit",(event) =>{
